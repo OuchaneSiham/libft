@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:55:08 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/08 18:24:45 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/09 22:00:09 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int		i;
 
 	i = 0;
+	if (!s || !f)
+		return (0);
 	str = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!str)
 		return (0);

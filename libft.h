@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 13:29:47 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/08 18:23:06 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/09 21:54:37 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_itoa(int n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	**ft_split(char *s, char c);
 
 #endif
