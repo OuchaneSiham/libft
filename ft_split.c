@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:30:05 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/09 22:08:12 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/13 23:07:21 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,30 @@
 
 int	get_words(char *s, char c)
 {
-	int	i;
-	int	j;
-	int	k;
+	int	x;
+	int	y;
+	int	z;
 
-	i = 0;
-	j = 0;
-	k = 0;
-	while (s[i])
+	x = 0;
+	y = 0;
+	z = 0;
+	while (s[x])
 	{
-		while (s[i] && s[i] == c)
-			i++;
-		while (s[i] && s[i] != c)
+		y = 0;
+		while (s[x] && s[x] == c)
+			x++;
+		while (s[x] && s[x] != c)
 		{
-			i++;
-			j++;
+			x++;
+			y++;
 		}
-		if (j > 0)
-		{
-			k++;
-			j = 0;
-		}
+		if (y > 0)
+			z++;
 	}
-	return (k);
+	return (z);
 }
 
-int	get_lenght(char const *p, char c)
+int	get_lenght(char *p, char c)
 {
 	int	i;
 
@@ -49,57 +47,56 @@ int	get_lenght(char const *p, char c)
 	return (i);
 }
 
-void	*ft_free(char **p, int c)
+void	*ft_free(char **p, int j)
 {
-	c--;
-	while (c >= 0)
+	j--;
+	while (j >= 0)
 	{
-		free(p[c]);
-		c--;
+		free(p[j]);
+		j--;
 	}
 	free(p);
 	return (0);
 }
 
-char	**ft_fun(char const *s, char c, char **p)
+char	**ft_fun(char *s, char c, char **t)
 {
-	int	j;
-	int	k;
-	int	i;
+	int		x;
+	int		y;
+	int		z;
 
-	i = 0;
-	j = 0;
-	while (s[i] != '\0')
+	x = 0;
+	y = 0;
+	while (s[x] != '\0')
 	{
-		k = 0;
-		while (s[i] != '\0' && s[i] == c)
-			i++;
-		if (s[i])
+		z = 0;
+		while (s[x] && s[x] == c)
+			x++;
+		if (s[x])
 		{
-			p[j] = malloc(sizeof(char) * get_lenght(s + i, c) + 1);
-			if (!p[j])
-				return (ft_free(p, i));
-			while (s[i] && s[i] != c)
-				p[j][k++] = s[i++];
-			p[j++][k] = '\0';
+			t[y] = malloc(sizeof(char) * (get_lenght((char *)s + x, c) + 1));
+			if (!t[y])
+				return (ft_free(t, y));
+			while (s[x] && s[x] != c)
+				t[y][z++] = s[x++];
+			t[y][z] = 0;
+			y++;
 		}
 	}
-	p[j] = 0;
-	return (p);
+	t[y] = 0;
+	return (t);
 }
 
-char	**ft_split(char *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**p;
-	char	**tab;
 
 	if (!s)
 		return (0);
-	p = malloc(sizeof(char *) * (get_words(s, c) + 1));
+	p = malloc(sizeof(char *) * (get_words((char *)s, c) + 1));
 	if (!p)
 		return (0);
-	tab = ft_fun(s, c, p);
-	return (tab);
+	return (ft_fun((char *)s, c, p));
 }
 // int main()
 // {
