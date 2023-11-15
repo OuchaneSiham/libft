@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:15:42 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/06 21:50:18 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/15 16:12:42 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,18 @@ void	*ft_calloc(size_t count, size_t size)
 // 	char *d;
 
 // 	d = ft_calloc(1,sizeof(char));
-// 	// c = malloc(6 * sizeof(char));
+// //  c = malloc(6 * sizeof(char));
 // 	printf("%p\n", d);
-// 	printf("%d\n", d);
+// 	printf("%s\n", d);
 // }
 // // calloc(5, sizeof(char));
 // // malloc(sizeof(char) * 5)
+
+// int main(void)
+
+// {
+// 	void *p = calloc(-1,-2);
+// 	void *s = ft_calloc(-1, -2);
+// 	printf("%p \n ",p);
+// 	printf("%p \n ",s);
+// }

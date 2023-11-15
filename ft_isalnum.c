@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:52:31 by souchane          #+#    #+#             */
-/*   Updated: 2023/10/31 18:12:02 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/15 15:36:56 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-//int main()
-//{
-//	printf("%d\n", ft_isalnum('a'));
-//}
+// int main()
+// {
+// 	printf("%d\n", ft_isalnum('a'));
+// }
