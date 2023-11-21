@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:55:08 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/09 22:00:09 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:32:17 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,17 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-// char	ft_toup(unsigned int i, char c)
+// char f( unsigned int i,char c)
 // {
 // 	(void) i;
 // 	if (c >= 'a' && c <= 'z')
-// 		c = c - 32;
-// 	return (c);
+// 		c = c -32;
+// 	return c;
 // }
-// this func we put the string and we changed 
-// depends on the changes that we put in the func f 
-// for example the func ft_toup we changer to upp to lower 
-// so the string will changed to lowercase
 // int main()
 // {
-// 	printf("%s\n", ft_strmapi("siham", &ft_toup));
+// 	char str[] = "siham";
+// 	char *s2;
+// 	s2 = ft_strmapi(str, f);
+// 	printf("%s", s2);
 // }

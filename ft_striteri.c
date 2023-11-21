@@ -6,9 +6,11 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:01:10 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/09 22:04:34 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/21 02:08:16 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -23,17 +25,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-// void	ft_toup(unsigned int i, char *c)
+// oid f( unsigned int i,char *c)
 // {
 // 	(void) i;
 // 	if (*c >= 'a' && *c <= 'z')
-// 		*c = *c - 32;
+// 		*c = *c -32;
 // }
-
-// int	main()
+// int main()
 // {
 // 	char s[] = "siham";
-// 	ft_striteri(s, &ft_toup);
-// 	printf("%s\n", s);
-// }
+// 	ft_striteri(s, f);
+// 	printf("%s", s);
+// }v

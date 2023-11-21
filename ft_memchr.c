@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 21:02:17 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/06 15:14:01 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/17 17:02:59 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // }
 // int main()
 // {
-//     int a = 654;
-//     int c = 2;
-// 	char s;
-// 	s = ft_memchr(&a,c, 2);
-//     printf("Result: %d\n",s);
+//     int a[] = {20392};
+//     int c = 79;
+// 	// char s = ft_memchr(a,c, 2);
+//     printf("Result: %p\n",ft_memchr(a,c, 3));
 //     return (0);
 // }
+// 1010001110
+// 10

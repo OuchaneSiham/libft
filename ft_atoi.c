@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 11:03:30 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/15 16:01:58 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 23:16:36 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *str)
 {
 	int			j;
-	long long	bita;
+	long long	nb;
 	long long	tmp;
 	int			sg;
 
@@ -27,22 +27,22 @@ int	ft_atoi(const char *str)
 	if (str[j] == '+' || str[j] == '-')
 		if (str[j++] == '-')
 			sg *= -1;
-	bita = 0;
+	nb = 0;
 	while (ft_isdigit(str[j]))
 	{
-		tmp = bita;
-		bita = bita * 10 + str[j] - '0';
-		if (tmp != bita / 10 && sg == 1)
+		tmp = nb;
+		nb = nb * 10 + str[j] - '0';
+		if (tmp != nb / 10 && sg == 1)
 			return (-1);
-		else if (tmp != bita / 10 && sg == -1)
+		else if (tmp != nb / 10 && sg == -1)
 			return (0);
 		j++;
 	}
-	return (bita * sg);
+	return (nb * sg);
 }
 // int main()
 // {
-// 	char s1[] = "9223372036854775807";
+// 	char s1[] = "92233720368547758020";
 // 	// char s2[] = "+-5633+-  ";
 // 	printf("%d\n", atoi(s1));
 // 	printf("%d\n", ft_atoi(s1));

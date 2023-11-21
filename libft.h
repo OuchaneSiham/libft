@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 13:29:47 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/13 22:49:16 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/19 19:40:11 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdio.h>
 # include <fcntl.h> 
 # include <stdlib.h> 
-# include <string.h>
+# include <string.h> 
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

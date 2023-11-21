@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 18:44:35 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/06 15:13:14 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 22:10:12 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-// int main() {
-//     int a = 6381921;
-//     char c[] = "xbcd";
-//     ft_memcpy(&c, &a, 2);
-//     printf("%s\n", c);
-//     return 0;
+// int main ()
+// {
+// 	int b = 'a';
+// 	int a[] = {20};
+// 	ft_memcpy(a, &b, 2);
+// 	printf("%d", a[0]);
 // }

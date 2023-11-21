@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 21:32:54 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/03 17:19:42 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 23:13:44 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (len);
 }
-// int main()
-// {
-// 	char s1[] = "keep it up";
-// 	char s2[22];
-// 	int a;
-// 	a = ft_strlcpy(s2, s1, 3);
-//  printf("%s\n", s2);
-// 	printf("%d\n", a);
-// }

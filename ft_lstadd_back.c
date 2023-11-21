@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 17:34:37 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/13 15:42:15 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 14:42:17 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*s;
+	t_list	*last;
 
 	if (!lst || !new)
 		return ;
@@ -23,12 +23,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	s = *lst;
-	while (s ->next != NULL)
-	{
-		s = s->next;
-	}
-	s->next = new;
+	last = ft_lstlast(*lst);
+	last->next = new;
 }
 // int main()
 // {

@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:18:55 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/03 16:59:45 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 22:53:07 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-// int main()
-// {
-// 	char s[] = "Could someone give me an example";
-// 	int c ;
-// 	c = 'm';
-// 	printf("%s\n", ft_strrchr(s, c));
-// }

@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:59:47 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/07 16:30:11 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/18 19:02:33 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ char	*ft_strdup(const char *s1)
 // {
 // 	// char str[] = "siham move";
 // 	char *s;
-// 	s = ft_strdup(NULL);
-// 	// s = strdup(NULL);
+// 	// s = ft_strdup(NULL);
+// 	s = strdup(NULL);
 // 	printf("%p\n", s);
 // 	printf("%s\n", s);
 // }

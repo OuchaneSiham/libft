@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:37:11 by souchane          #+#    #+#             */
-/*   Updated: 2023/10/31 15:54:46 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 22:49:56 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-// int main(){
-//     printf("%d\n", ft_isalpha('h'));
-// }

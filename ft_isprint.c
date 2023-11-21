@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:53:29 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/03 15:14:16 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 22:50:05 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-//int main()
-//{
-//	printf("%d\n", ft_isprint('\n'));
-//}

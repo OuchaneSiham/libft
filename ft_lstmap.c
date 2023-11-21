@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:46:53 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/13 18:34:44 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:53:16 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (list);
 }
-// void	fffprint(void * content)
-// {
-// 	printf("%s\n", content);
-// }
-// void del_content(void *content)
-// {
-//     free(content);
-// }
+
 // void	*fup(void *c)
 // {
 // 	char	*cc ;
@@ -70,7 +63,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 // 		tm = tm->next;
 // 	}
 // 	t_list *h2;
-// 	h2 = ft_lstmap(h , fup,  del_content);
+// 	h2 = ft_lstmap(h , fup,  free);
 // 	printf("after ;\n");
 // 	ft_lstiter(h2, fffprint);
 // }

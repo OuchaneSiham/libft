@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:45:20 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/06 19:31:34 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 22:45:04 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(dst, src, len);
 	return (dst);
 }
-
-// int main() {
-//     char str[] = "siham";
-//     ft_memcpy(str + 2, str, 6);
-//     printf("%s\n", str);
-//     return 0;
-// }
-
-// int main() {
-//     char str[10] = "siham";
-//      printf("dst: %s\n", ft_memmove(str + 2, str, 6));
-//      printf("str: %s\n", str);
-//     return 0;
-// }

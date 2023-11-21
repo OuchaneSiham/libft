@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:30:05 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/13 23:07:21 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:34:09 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,29 +37,29 @@ int	get_words(char *s, char c)
 	return (z);
 }
 
-int	get_lenght(char *p, char c)
+int	get_lenght(char *s, char c)
 {
 	int	i;
 
 	i = 0;
-	while (p[i] != '\0' && p[i] != c)
+	while (s[i] != '\0' && s[i] != c)
 		i++;
 	return (i);
 }
 
-void	*ft_free(char **p, int j)
+void	*ft_free(char **tab, int y)
 {
-	j--;
-	while (j >= 0)
+	y--;
+	while (y >= 0)
 	{
-		free(p[j]);
-		j--;
+		free(tab[y]);
+		y--;
 	}
-	free(p);
-	return (0);
+	free(tab);
+	return (NULL);
 }
 
-char	**ft_fun(char *s, char c, char **t)
+char	**ft_fun(char *s, char c, char **tab)
 {
 	int		x;
 	int		y;
@@ -74,40 +74,43 @@ char	**ft_fun(char *s, char c, char **t)
 			x++;
 		if (s[x])
 		{
-			t[y] = malloc(sizeof(char) * (get_lenght((char *)s + x, c) + 1));
-			if (!t[y])
-				return (ft_free(t, y));
+			tab[y] = malloc(sizeof(char) * (get_lenght((char *)s + x, c) + 1));
+			if (!tab[y])
+				return (ft_free(tab, y));
 			while (s[x] && s[x] != c)
-				t[y][z++] = s[x++];
-			t[y][z] = 0;
+				tab[y][z++] = s[x++];
+			tab[y][z] = '\0';
 			y++;
 		}
 	}
-	t[y] = 0;
-	return (t);
+	tab[y] = NULL;
+	return (tab);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**p;
+	char	**t;
+	char	**tab;
 
 	if (!s)
 		return (0);
-	p = malloc(sizeof(char *) * (get_words((char *)s, c) + 1));
-	if (!p)
+	t = malloc(sizeof(char *) * (get_words((char *)s, c) + 1));
+	if (!t)
 		return (0);
-	return (ft_fun((char *)s, c, p));
+	tab = ft_fun((char *)s, c, t);
+	return (tab);
 }
 // int main()
 // {
-// 	char s[] = "to be honest      vbgch     chggv gfgh ";
-// 	char c = ' ';
-// 	char **resu = ft_split((char *)s, c);
-
-// 	int  i =0;
-// 	while (resu[i])
+// 	int i;
+// 	i = 0;
+// 	char str[]= "siham ou cha hh f0";
+// char c = ' ';
+// 	char **tab;
+// 	tab = ft_split(str, c);
+// 	while (tab[i] != NULL)
 // 	{
-// 		printf("%s\n", resu[i]);
+// 		printf("%s\n", tab[i]);
 // 		i++;
 // 	}
 // }

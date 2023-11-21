@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:25:24 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/09 15:05:32 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/20 23:10:08 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 }
 // int main()
 // {
-//     int size;
-
-//     char dest[20]="ouchane";
-//     char src[]="siham";
-
-//     size = ft_strlcat(dest, src, 9);
-
-//     printf("size: %d\n", size);
-//     printf("dest: %s\n", dest);
+// 	char str[] = "siham";
+// 	char dst[] = "ouchane";
+// 	ft_strlcat(dst, str, 9);
+// 	printf("%s\n", dst);
 // }
