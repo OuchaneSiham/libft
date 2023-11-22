@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 13:29:47 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/19 19:40:11 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/22 20:09:55 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdio.h>
-# include <fcntl.h> 
 # include <stdlib.h> 
-# include <string.h> 
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

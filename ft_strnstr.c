@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 15:30:41 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/21 01:29:14 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/22 20:08:18 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	size_t	flen;
 
 	x = 0;
-	if (!str && !len)
+	if (!str && to_find && !len)
 		return (0);
 	if (*to_find == 0 || to_find == str)
 		return ((char *)str);

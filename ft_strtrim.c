@@ -6,13 +6,13 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:06:37 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/07 21:02:16 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/22 16:11:20 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_find(char const *set, char c)
+static int	ft_find(char const *set, char c)
 {
 	int	i;
 

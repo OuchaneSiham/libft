@@ -6,13 +6,13 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:30:05 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/21 16:34:09 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/22 16:09:04 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_words(char *s, char c)
+static int	get_words(char *s, char c)
 {
 	int	x;
 	int	y;
@@ -37,7 +37,7 @@ int	get_words(char *s, char c)
 	return (z);
 }
 
-int	get_lenght(char *s, char c)
+static int	get_lenght(char *s, char c)
 {
 	int	i;
 
@@ -47,7 +47,7 @@ int	get_lenght(char *s, char c)
 	return (i);
 }
 
-void	*ft_free(char **tab, int y)
+static void	*ft_free(char **tab, int y)
 {
 	y--;
 	while (y >= 0)
@@ -59,7 +59,7 @@ void	*ft_free(char **tab, int y)
 	return (NULL);
 }
 
-char	**ft_fun(char *s, char c, char **tab)
+static char	**ft_fun(char *s, char c, char **tab)
 {
 	int		x;
 	int		y;

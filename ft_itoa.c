@@ -6,13 +6,13 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 11:44:00 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/19 00:57:05 by souchane         ###   ########.fr       */
+/*   Updated: 2023/11/22 16:07:59 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_num(long nbr)
+static int	ft_num(long nbr)
 {
 	int	i;
 

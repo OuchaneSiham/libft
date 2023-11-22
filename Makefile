@@ -6,7 +6,7 @@
 #    By: souchane <souchane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/19 22:20:15 by souchane          #+#    #+#              #
-#    Updated: 2023/11/19 22:37:07 by souchane         ###   ########.fr        #
+#    Updated: 2023/11/22 20:09:31 by souchane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,4 +52,6 @@ fclean : clean
 	@$(RM) $(NAME)
 	@ echo "remove libft.a"
 
-re : fclean all bonus
+re : fclean all 
+
+.PHONY : bonus clean fclean re all
