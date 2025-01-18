@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//lower case to upper case
+// lower case to upper case
 #include "libft.h"
 
 int	ft_toupper(int c)

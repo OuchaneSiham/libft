@@ -6,21 +6,21 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 19:53:45 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/22 16:14:21 by souchane         ###   ########.fr       */
+/*   Updated: 2025/01/04 18:28:15 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_node	*ft_lstnew(void *content)
 {
-	t_list	*head;
+	t_node	*head;
 
-	head = malloc(sizeof(t_list));
+	head = malloc(sizeof(t_node));
 	if (!head)
 		return (NULL);
-	head ->content = content;
-	head ->next = NULL;
+	head->content = content;
+	head->next = NULL;
 	return (head);
 }
 // int main()

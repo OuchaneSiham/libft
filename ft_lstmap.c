@@ -6,16 +6,16 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:46:53 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/20 15:53:16 by souchane         ###   ########.fr       */
+/*   Updated: 2025/01/04 18:28:03 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_node	*ft_lstmap(t_node *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*list;
-	t_list	*new;
+	t_node	*list;
+	t_node	*new;
 
 	if (!lst || !del || !f)
 		return (NULL);
@@ -57,7 +57,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 //     ft_lstadd_back(&h, node2);
 //     ft_lstadd_back(&h, node3);
 // 	t_list *tm = h;
-// 	while (tm) 
+// 	while (tm)
 // 	{
 // 		printf("%s \n", tm->content);
 // 		tm = tm->next;

@@ -48,7 +48,7 @@ char	*ft_strtrim(char const *str, char const *set)
 // "  .00..        ...   ..000*" ". 0"
 // to know our  string we do the end - the start
 // ft_substr(str, start, len) >> p = malloc(sizeof(char) * len + 1)
-// cz substr already has malloc 
+// cz substr already has malloc
 // and substr already has = '\0'
 // int main()
 // {

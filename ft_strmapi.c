@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char				*str;
-	unsigned int		i;
+	char			*str;
+	unsigned int	i;
 
 	i = 0;
 	if (!s || !f)
@@ -36,7 +36,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // 	(void) i;
 // 	if (c >= 'a' && c <= 'z')
 // 		c = c -32;
-// 	return c;
+// 	return (c);
 // }
 // int main()
 // {

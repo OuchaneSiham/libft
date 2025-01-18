@@ -6,19 +6,19 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 16:06:51 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/20 05:49:00 by souchane         ###   ########.fr       */
+/*   Updated: 2025/01/04 18:27:54 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+t_node	*ft_lstlast(t_node *lst)
 {
 	if (!lst)
 		return (NULL);
-	while (lst ->next != NULL)
+	while (lst->next != NULL)
 	{
-		lst = lst ->next; 
+		lst = lst->next;
 	}
 	return (lst);
 }
@@ -39,7 +39,7 @@ t_list	*ft_lstlast(t_list *lst)
 // 	node2->next = node3;
 // 	head = node1;
 // 	t_list *tm = head;
-//     while (tm) 
+//     while (tm)
 // 	{
 //         printf("%s \n",tm -> content );
 //         tm= tm->next;

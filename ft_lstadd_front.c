@@ -6,17 +6,17 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 11:03:39 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/12 18:11:21 by souchane         ###   ########.fr       */
+/*   Updated: 2025/01/04 18:27:08 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_node **lst, t_node *new)
 {
 	if (!lst && !new)
 		return ;
-	new ->next = *lst;
+	new->next = *lst;
 	*lst = new;
 }
 // int main()
@@ -33,7 +33,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 //     ft_lstadd_front(&h, node2);
 //     ft_lstadd_front(&h, node3);
 // 	t_list *tm = h;
-//     while (tm) 
+//     while (tm)
 // 	{
 //         printf("%s ", tm->content);
 //         tm= tm->next;

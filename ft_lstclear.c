@@ -6,16 +6,16 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 22:24:14 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/13 16:49:16 by souchane         ###   ########.fr       */
+/*   Updated: 2025/01/04 18:27:17 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_node **lst, void (*del)(void *))
 {
-	t_list	*head;
-	t_list	*tmp;
+	t_node	*head;
+	t_node	*tmp;
 
 	if (!lst || !del)
 		return ;
@@ -42,14 +42,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 //     ft_lstadd_back(&h, node2);
 //     ft_lstadd_back(&h, node3);
 // 	t_list *tm = h;
-//     while (tm) 
+//     while (tm)
 // 	{
 //         printf("%s \n", tm->content);
 //         tm= tm->next;
 // 	}
 // 	ft_lstclear(&h, free);
 // 	tm = h;
-//     while (tm) 
+//     while (tm)
 // 	{
 //         printf("%s \n", tm->content);
 //         tm= tm->next;

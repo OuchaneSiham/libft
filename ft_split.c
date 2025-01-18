@@ -61,9 +61,9 @@ static void	*ft_free(char **tab, int y)
 
 static char	**ft_fun(char *s, char c, char **tab)
 {
-	int		x;
-	int		y;
-	int		z;
+	int	x;
+	int	y;
+	int	z;
 
 	x = 0;
 	y = 0;

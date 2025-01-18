@@ -6,13 +6,13 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 15:05:31 by souchane          #+#    #+#             */
-/*   Updated: 2023/11/20 05:02:31 by souchane         ###   ########.fr       */
+/*   Updated: 2025/01/04 18:28:24 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_lstsize(t_node *lst)
 {
 	int	i;
 
@@ -35,7 +35,7 @@ int	ft_lstsize(t_list *lst)
 // 	node1 = ft_lstnew("1");
 // 	node2 = ft_lstnew("2");
 // 	node3 = ft_lstnew("3");
-// 	 node1->next = node2;
+// 		node1->next = node2;
 //     node2->next = node3;
 // 	node3->next = node4;
 // 	h = node1;
